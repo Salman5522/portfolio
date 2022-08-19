@@ -18,11 +18,10 @@ export default function SectionOne() {
 
     // }
 
-    console.log(window.pageXOffset)
     window.addEventListener("scroll", onScroll, { passive: true });
     
     return () => window.removeEventListener("scroll", onScroll);
-  }, [window.pageXOffset]);
+  }, []);
 
   return (
     <section className="sectionOne">
