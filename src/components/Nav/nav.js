@@ -26,7 +26,7 @@ export default function Nav() {
 
   useEffect(() => {
     setHeight(((progressBar + ADJUSTMENT_VALUE) / DOCUMENT_HEIGHT) * 250);
-  }, [progressBar]);
+  }, [progressBar, DOCUMENT_HEIGHT]);
 
   function NavClick() {
     setNavItemsSetting({ width: 70, display: "flex" });

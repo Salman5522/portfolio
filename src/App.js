@@ -1,13 +1,9 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
-
-import Modal from "./components/modal";
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Projects from "./components/Pages/Projects";
 import Experience from "./components/Pages/Experience";
 import Skills from "./components/Pages/Skills";
 import Contact from "./components/Pages/Contact";
-import NavLinks from "./components/Nav/navlinks";
 import Error from "./components/Pages/Error";
 import Home from "./components/Pages/Home";
 import Nav from "./components/Nav/nav";

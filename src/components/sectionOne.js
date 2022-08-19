@@ -3,11 +3,6 @@ import "../styles/sectionOne.css";
 
 export default function SectionOne() {
   const [offset, setOffset] = useState(0);
-  const [imageHeight, setImageHeight] = useState(0);
-
-  useEffect(() => {
-    // setImageHeight(600)
-  }, [])
 
   useEffect(() => {
     const onScroll = () => {

@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react";
 import SectionOne from "../../components/sectionOne";
 import Space from "../../components/space";
-import Nav from "../../components/Nav/nav";
 import Modal from "../modal";
 
 export default function Home() {

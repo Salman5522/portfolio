@@ -1,5 +1,4 @@
-import React, {useContext, useEffect} from 'react'
-import { useAppContext } from '../Context';
+import React from 'react'
 
 export default function Contact() {
 

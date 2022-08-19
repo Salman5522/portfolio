@@ -9,7 +9,7 @@ import { useAppContext } from '../Context';
 
 export default function NavLinks({ display }) {
 
-  const {navItemsSetting, setNavItemsSetting} = useAppContext();
+  const {setNavItemsSetting} = useAppContext();
 
   function clickHandler(){
     setNavItemsSetting({width: 0, display: "none"})
