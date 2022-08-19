@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/sectionOne.css";
 
 export default function SectionOne() {
@@ -6,22 +6,23 @@ export default function SectionOne() {
 
   useEffect(() => {
     const onScroll = () => {
-        if(window.pageYOffset < 700){
-
-            setOffset(window.pageYOffset);
-        }
-        else{
-            setOffset(700)
-        }
+      if (window.pageYOffset < 700) {
+        setOffset(window.pageYOffset);
+      } else {
+        setOffset(700);
+      }
     };
 
     window.removeEventListener("scroll", onScroll);
+    // if(window.pageXOffset < 1000){
+
+    // }
+
+    console.log(window.pageXOffset)
     window.addEventListener("scroll", onScroll, { passive: true });
     
     return () => window.removeEventListener("scroll", onScroll);
-    
-    
-  }, []);
+  }, [window.pageXOffset]);
 
   return (
     <section className="sectionOne">
@@ -38,9 +39,6 @@ export default function SectionOne() {
       <div className="image-container">
         <img
           className="image-bottle"
-          // style={{
-          //   height: `${imageHeight}px`
-          // }}
           src={require("../images/bottle.jpg")}
           alt="bottle"
         />

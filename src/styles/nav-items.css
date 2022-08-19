@@ -31,3 +31,9 @@
 .cross:hover .cross-icon{
     rotate: 180deg;
 }
+
+@media only screen and (max-width: 600px){
+    .cross{
+        top: 5vh;
+    }
+}
