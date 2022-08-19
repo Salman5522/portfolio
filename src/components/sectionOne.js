@@ -6,20 +6,22 @@ export default function SectionOne() {
 
   useEffect(() => {
     const onScroll = () => {
-      if (window.pageYOffset < 700) {
-        setOffset(window.pageYOffset);
-      } else {
-        setOffset(700);
+      if(window.innerWidth > 1000){
+        
+        if (window.pageYOffset < 700) {
+          setOffset(window.pageYOffset);
+        } else {
+          setOffset(700);
+        }
+      }
+      else{
+        setOffset(0);
       }
     };
 
     window.removeEventListener("scroll", onScroll);
-    // if(window.pageXOffset < 1000){
-
-    // }
-
     window.addEventListener("scroll", onScroll, { passive: true });
-    
+
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
