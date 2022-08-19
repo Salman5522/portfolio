@@ -28,7 +28,6 @@ export default function Home() {
       {!modal.visible && (
         <>
           {/* <Nav /> */}
-          {window.scrollTo(500, 500)}
           <SectionOne />
           <Space />
         </>
