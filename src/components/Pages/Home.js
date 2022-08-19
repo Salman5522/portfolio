@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import SectionOne from "../../components/sectionOne";
 import Space from "../../components/space";
 import Modal from "../modal";
+import SectionTwo from "../sectionTwo";
 
 export default function Home() {
 
@@ -29,6 +30,7 @@ export default function Home() {
         <>
           {/* <Nav /> */}
           <SectionOne />
+          <SectionTwo />
           <Space />
         </>
       )}

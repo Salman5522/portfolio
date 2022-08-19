@@ -2,6 +2,9 @@
     --color-primary: #DD545B;
     --color-primary-light: hsl(357, 20%, 82%);
     --color-primary-dark: #e0343d;
+    --font-bold: Proxima-Regular;
+    --font-light: Proxima-Light;
+    --font-style: Sainte-Light;
 }
 
 *{

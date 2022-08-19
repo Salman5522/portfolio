@@ -1,4 +1,3 @@
-
 .sectionOne{
     display: flex;
     flex-direction: column;
@@ -46,9 +45,9 @@
     z-index: -1;
 }
 
-.do-something{
-    transform: translateX(178px);
-    transition: all 2s linear;
+.title-back{
+    transition: transform 1s linear;
+    transform: translateY(-100px)!important;
 }
 
 @media only screen and (max-width: 1000px) {

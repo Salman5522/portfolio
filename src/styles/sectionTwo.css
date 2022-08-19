@@ -1,0 +1,17 @@
+.section-two-container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 500px;
+    font-size: 4vw;
+    width: 60%;
+    text-align: center;
+    font-family: var(--font-style);
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 1000px) {
+    .section-two-container{
+        margin-top: 150px;
+        font-size: 2rem;
+    }
+}

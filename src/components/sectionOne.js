@@ -3,20 +3,20 @@ import "../styles/sectionOne.css";
 
 export default function SectionOne() {
   const [offset, setOffset] = useState(0);
+  const [titlePush, setTitlePush] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
       if(window.innerWidth > 1000){
-        
+        setTitlePush(false);
         if (window.pageYOffset < 700) {
           setOffset(window.pageYOffset);
         } else {
           setOffset(700);
+          setTitlePush(true);
         }
       }
-      else{
-        setOffset(0);
-      }
+      
     };
 
     window.removeEventListener("scroll", onScroll);
@@ -31,7 +31,7 @@ export default function SectionOne() {
         style={{
           transform: `translateY(${offset}px)`,
         }}
-        className="title"
+        className={`title ${titlePush && 'title-back'}`}
       >
         Design Graphique
         <div className="occuption">Freelance</div>
