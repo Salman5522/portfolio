@@ -1,0 +1,32 @@
+.nav-items-container{
+    width: 70%;
+    background-color: var(--color-primary);
+    position: fixed;
+    height: 100%;
+    z-index: 11;
+    transition: width .5s ease-in;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cross{
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    color: white;
+    z-index: 12;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.cross-icon{
+    transition: rotate .2s linear;
+    font-size: 1.5rem;
+}
+
+.cross:hover .cross-icon{
+    rotate: 180deg;
+}

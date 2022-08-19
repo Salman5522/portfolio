@@ -1,0 +1,38 @@
+.container{
+    width: 100%;
+    position: absolute;
+    background-color: var(--color-primary);
+    z-index: 13;
+    transition: height .5s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+}
+
+.intro{
+    font-size: 5vw;
+    transition: opacity .5s linear;
+    color: white;
+}
+
+.text {
+    position:relative;
+    overflow:hidden;
+    margin:0 auto;
+}
+.fadingEffect {
+    position:absolute;
+    top:0; bottom:0; right:0;
+    width:100%;
+    background:var(--color-primary);
+    animation: showHide 3s ease-in;
+    
+}
+
+@keyframes showHide {
+    0% {width:100%}
+    40% {width:0%}
+    60% {width:0%;}
+    100% {width:0%;}
+}
