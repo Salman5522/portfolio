@@ -7,6 +7,7 @@ import Contact from "./components/Pages/Contact";
 import Error from "./components/Pages/Error";
 import Home from "./components/Pages/Home";
 import Nav from "./components/Nav/nav";
+import Footer from "./components/footer";
 
 export default function App() {
   
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="*" element={<Error />}></Route>
       </Routes>
+      <Footer/>
     </>
   );
 }

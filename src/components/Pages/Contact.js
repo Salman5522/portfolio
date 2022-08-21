@@ -15,9 +15,11 @@ export default function Contact() {
           <h2>Interested in working with me?</h2>
 
           <p>Contact me on Gmail directly without any hesitation, Thank You!</p>
-          <div className="center"
+          <div
+            className="center"
             style={{
               opacity: navItemsSetting.opacity,
+              visibility: navItemsSetting.opacity === 0 ? "hidden" : "visible"
               // display: navItemsSetting.display === "flex" ? "none" : "flex",
             }}
           >
