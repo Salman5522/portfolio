@@ -3,14 +3,14 @@
     background-color: var(--color-primary);
     position: fixed;
     height: 100%;
-    z-index: 11;
+    z-index: 12;
     transition: width .5s ease-in;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    margin-top: -42px;
+    
 }
 
 .cross{
@@ -33,7 +33,18 @@
     rotate: 180deg;
 }
 
+/* .styling{
+    transition: all 2s linear;
+    transform: translateX(0px);
+    opacity: 1!important;
+} */
+
 @media only screen and (max-width: 600px){
+
+    .nav-items-container{
+        margin-top: -42px;
+    }
+
     .cross{
         top: 5vh;
     }

@@ -11,6 +11,7 @@ export function ContextProvider({children}){
    const [navItemsSetting, setNavItemsSetting] = useState({
      width: 0,
      display: "none",
+     opacity: 1
    });
 
     return (

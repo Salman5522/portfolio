@@ -1,0 +1,53 @@
+.experience-container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-primary-dark);
+    padding-top: 100px;
+    color: white;
+}
+
+.experience-wrapper{
+    font-size: 2vw;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-wrapper ul {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experience-wrapper h1 {
+    font-size: 4vw;
+}
+
+.experience-wrapper li{
+    list-style: circle;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .experience-wrapper h1 {
+        font-size: 3rem;
+    }
+
+    .experience-wrapper{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .experience-wrapper h1 {
+        font-size: 2.5rem;
+    }
+
+    .experience-wrapper {
+        font-size: 1.5rem;
+    }
+}

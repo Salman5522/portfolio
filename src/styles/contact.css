@@ -1,0 +1,86 @@
+.contact-container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-primary-dark);
+    color: white;
+    padding-top: 100px;
+
+    /* z-index: 9; */
+    /* position: relative; */
+}
+
+.contact-wrapper{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-wrapper a {
+    cursor: pointer;
+    
+    font-size: 2rem;
+    color: white;
+    transition: all .2s ease-in;
+}
+
+.contact-wrapper h1 {
+    font-size: 4rem;
+}
+
+.contact-wrapper h2 {
+    margin-top: 50px;
+    font-size: 3.5rem;
+}
+
+.contact-wrapper p {
+    font-size: 3rem;
+}
+
+.gap{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 13;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact-wrapper h1 {
+        font-size: 3rem;
+    }
+
+    .contact-wrapper p{
+        font-size: 2rem;
+    }
+
+    .contact-wrapper a {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-wrapper h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-wrapper h2 {
+        font-size: 2rem;
+    }
+
+    .contact-wrapper p{
+        font-size: 1.5rem;
+    }
+
+    /* .contact-wrapper a {
+        font-size: 1rem;
+    } */
+}

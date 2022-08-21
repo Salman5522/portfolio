@@ -1,18 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { TiSocialLinkedin } from "react-icons/ti";
-import { FaBehance } from "react-icons/fa";
-import { TbBrandInstagram } from "react-icons/tb";
-import { IconContext } from "react-icons";
+
 import "../../styles/navlinks.css";
 import { useAppContext } from '../Context';
+import SocialIcons from "../social-icons";
 
 export default function NavLinks({ display }) {
 
   const {setNavItemsSetting} = useAppContext();
 
   function clickHandler(){
-    setNavItemsSetting({width: 0, display: "none"})
+    setNavItemsSetting({width: 0, display: "none", opacity: 1})
   }
   return (
     <div
@@ -52,18 +50,12 @@ export default function NavLinks({ display }) {
       <div className="vertical-line"></div>
 
       <div className="contact-info">
-        <p>salman.chaudry111@gmail.com</p>
-        <div className="social-icons">
-          <IconContext.Provider value={{ className: "social-icon" }}>
-            <TiSocialLinkedin />
-          </IconContext.Provider>
-          <IconContext.Provider value={{ className: "social-icon" }}>
-            <FaBehance />
-          </IconContext.Provider>
-          <IconContext.Provider value={{ className: "social-icon" }}>
-            <TbBrandInstagram />
-          </IconContext.Provider>
-        </div>
+        <p>
+          <a href="mailto:salman.chaudry111@gmail.com">
+            salman.chaudry111@gmail.com
+          </a>
+        </p>
+      <SocialIcons />
       </div>
     </div>
   );

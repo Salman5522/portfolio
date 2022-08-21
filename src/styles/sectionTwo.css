@@ -13,5 +13,12 @@
     .section-two-container{
         margin-top: 150px;
         font-size: 2rem;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .section-two-container {
+        font-size: 1.5rem;
     }
 }

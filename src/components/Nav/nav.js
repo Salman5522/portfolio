@@ -29,7 +29,7 @@ export default function Nav() {
   }, [progressBar, DOCUMENT_HEIGHT]);
 
   function NavClick() {
-    setNavItemsSetting({ width: 70, display: "flex" });
+    setNavItemsSetting({ width: 70, display: "flex", opacity: 0});
   }
 
   return (

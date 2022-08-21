@@ -6,11 +6,13 @@ import NavLinks from "./navlinks";
 
 
 export default function NavItems({ navItemsSetting, setNavItemsSetting }) {
-  function CrossClick() {
-    setNavItemsSetting({ width: 0, display: "none" });
-  }
 
   const { width, display } = navItemsSetting;
+
+  function CrossClick() {
+    setNavItemsSetting({ width: 0, display: "none", opacity: 1});
+  }
+
   return (
     <>
       <div
@@ -18,7 +20,7 @@ export default function NavItems({ navItemsSetting, setNavItemsSetting }) {
           width: `${width}%`,
           //   opacity: opacity
         }}
-        className="nav-items-container"
+        className='nav-items-container'
       >
         <div
           style={{
@@ -32,8 +34,7 @@ export default function NavItems({ navItemsSetting, setNavItemsSetting }) {
           </IconContext.Provider>
         </div>
 
-        <NavLinks display={display}/>
-        
+        <NavLinks display={display} />
       </div>
     </>
   );
