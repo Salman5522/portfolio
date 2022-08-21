@@ -44,7 +44,7 @@ export default function SectionOne() {
           alt="bottle"
         />
         <img
-          className="image-cup" width={"400px"}
+          className="image-cup" height={"500px"}
           src={require("../images/cup.png")}
           alt="coffee cup"
         />
