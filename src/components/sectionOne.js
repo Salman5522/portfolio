@@ -41,12 +41,12 @@ export default function SectionOne() {
         <img
           className="image-1"
           src={require("../images/image-1.jpeg")}
-          alt="image 1"
+          alt="white interface"
         />
         <img
           className="image-2" height={"500px"}
           src={require("../images/image-2.jpeg")}
-          alt="image 2"
+          alt="colorful interface"
         />
       </div>
     </section>
