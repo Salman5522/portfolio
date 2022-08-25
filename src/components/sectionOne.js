@@ -31,7 +31,7 @@ export default function SectionOne() {
         style={{
           transform: `translateY(${offset}px)`,
         }}
-        className={`title ${titlePush && 'title-back'}`}
+        className={`title ${titlePush && "title-back"}`}
       >
         Graphic Design
         <div className="occuption">Freelance</div>
@@ -44,7 +44,9 @@ export default function SectionOne() {
           alt="white interface"
         />
         <img
-          className="image-2" height={"500px"}
+          className="image-2"
+          height={"1400px"}
+          width={"800px"}
           src={require("../images/image-2.jpeg")}
           alt="colorful interface"
         />
