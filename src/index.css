@@ -2,9 +2,10 @@
     --color-primary: #DD545B;
     --color-primary-light: hsl(357, 20%, 82%);
     --color-primary-dark: #e0343d;
-    --font-bold: Proxima-Regular;
-    --font-light: Proxima-Light;
-    --font-style: Sainte-Light;
+    --font-primary: OpenSans-Light;
+    --font-primary-italic: OpenSans-Italic;
+    --font-primary-italic-light: OpenSans-LightItalic;
+    --font-secondary-heading: Ginger
 }
 
 *{
@@ -14,21 +15,27 @@
 }
 
 @font-face {
-    font-family: Proxima-Light;
-    src: url('./fonts/ProximaNova-Light.woff');
+    font-family: OpenSans-Italic;
+    src: url('./fonts/open-sans/OpenSans-Italic.ttf');
 }
 
 @font-face {
-    font-family: Proxima-Regular;
-    src: url('./fonts/ProximaNova-Regular.woff');
+    font-family: OpenSans-Light;
+    src: url('./fonts/open-sans/OpenSans-Light.ttf');
 }
 
 @font-face {
-    font-family: Sainte-Light;
-    src: url('./fonts/SainteColombe-Light.woff');
+    font-family: OpenSans-LightItalic;
+    src: url('./fonts/open-sans/OpenSans-LightItalic.ttf');
 }
+
+@font-face {
+    font-family: Ginger;
+    src: url('./fonts/ginger-modern-stylish-font/Ginger.ttf');
+}
+
 
 body{
-    font-family: Proxima-Light;
+    font-family: var(--font-primary);
     color: #DD545B;
 }

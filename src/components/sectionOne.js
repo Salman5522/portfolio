@@ -33,20 +33,20 @@ export default function SectionOne() {
         }}
         className={`title ${titlePush && 'title-back'}`}
       >
-        Design Graphique
+        Graphic Design
         <div className="occuption">Freelance</div>
       </div>
 
       <div className="image-container">
         <img
-          className="image-bottle"
-          src={require("../images/bottle.jpg")}
-          alt="bottle"
+          className="image-1"
+          src={require("../images/image-1.jpeg")}
+          alt="image 1"
         />
         <img
-          className="image-cup" height={"500px"}
-          src={require("../images/cup.png")}
-          alt="coffee cup"
+          className="image-2" height={"500px"}
+          src={require("../images/image-2.jpeg")}
+          alt="image 2"
         />
       </div>
     </section>
