@@ -35,7 +35,7 @@ export default function Nav() {
   return (
     <div className="nav-container">
       <div className="logo">
-        <img src={require("../../images/logo.png")} alt="Logo" />
+        <img src={require("../../images/logo.jpeg")} alt="Logo" />
       </div>
       <div className="nav-items">
         <NavItems
