@@ -1,0 +1,142 @@
+.mood-board-container{
+    padding: 150px;
+    display: flex;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.mood-board-container-top{
+    display: flex;
+}
+
+.logo-designing, .mood-board{
+    width: 100%;
+}
+
+.numbering{
+    color: black;
+    font-style: italic;
+}
+
+.logo-designing-title{
+    font-style: italic;
+    font-size: 30px;
+    background-color: aqua;
+    background-color: var(--color-primary);
+    color: white;
+    width: max-content;
+    padding: 5px 10px;
+    border-radius: 40px;
+
+}
+
+.mood-board{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.mood-board-title{
+    font-size: 40px;
+    font-weight: 900;
+    color: rgb(0, 10, 151);
+}
+
+/* .basic-info{
+    position: relative;
+} */
+
+.basic-info-container{
+    background-color: rgb(245, 145, 51);
+    position: absolute;
+    padding: 20px 10px;
+    color: white;
+    top: 35px;
+    opacity: 0.8;
+    width: 300px;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.basic-info-title{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.basic-info-title > span{
+    color: black;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.logo-designing-body{
+    margin-top: 20px;
+    color: black;
+}
+
+.logo-designing-heading{
+    color: black;
+
+}
+
+.logo-designing-body p span{
+    font-size: 25px;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.catalogue{
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-top > img{
+    width: 800px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.image-bottom > img{
+    width: 800px;
+    height: 250px;
+    object-fit: cover;
+    margin-top: -5px;
+}
+
+.image-triangle-top-left{
+clip-path: polygon(100% 100%, 0 0, 0 100%);
+position: absolute;
+top: 0;
+width: 400px;
+height: 250px;
+}
+
+.image-triangle-top-left > img{
+    width: 400px;
+}
+
+.image-triangle-bottom-left {
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+    position: absolute;
+    top: 50%;
+    width: 400px;
+    height: 250px;
+    background-color: #06083b
+}
+
+.image-triangle-bottom-left>img {
+    width: 250px;
+}
